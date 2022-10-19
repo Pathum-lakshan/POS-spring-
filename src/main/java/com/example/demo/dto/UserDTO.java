@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
+
 /**
  * ALE IS TER
  * 10/16/2022
@@ -18,6 +20,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class UserDTO {
     private int id;
-    private String name;
-    private String address;
+    private String name,address,nic,email;
+    private Date dob;
 }

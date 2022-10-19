@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 @NoArgsConstructor
@@ -14,6 +15,6 @@ import javax.persistence.Id;
 public class User {
     @Id
     private int id;
-    private String name;
-    private String address;
+    private String name,address,nic,email;
+    private Date dob;
 }

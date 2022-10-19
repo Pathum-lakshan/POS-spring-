@@ -14,11 +14,5 @@ import org.springframework.data.jpa.repository.Query;
  * UserRepo
  */
 public interface UserRepo extends JpaRepository<User,Integer> {
-    @Query(value = "SELECT * FROM user WHERE id= ?1",nativeQuery = true)
-    User getUserByUserID(String id);
-    @Query(value = "SELECT * FROM user WHERE id= ?1 AND address=?2",nativeQuery = true)
-    User getUserByUserIdAndAddress(String id , String address);
-    @Modifying
-    @Query(value = "UPDATE user SET name=?1 WHERE id= ?2",nativeQuery = true)
-    int updateUserNameById(String name , String id);
+
 }

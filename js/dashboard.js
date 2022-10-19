@@ -22,6 +22,8 @@ $('#customer_btn_dashboard').click(function () {
     document.getElementById("customer").style.display = "block";
     document.getElementById("order").style.display = "none";
 });
+
+
 const customers = [];
 const products = [];
 const orders = [];
