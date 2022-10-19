@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> S P A </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" rel="stylesheet"
+          type="text/css"/>
+    <link href="css/nucleo-svg.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="css/material-dashboard.css?v=3.0.4" id="pagestyle" rel="stylesheet"/>
+</head>
+<body class="g-sidenav-show  bg-gray-100">
+<section class="vh-100" id="section_for_load">
+    <div class="container py-5 h-100" id="rm">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+                <img alt="Phone image"
+                     class="img-fluid" src="img/SkyTab-POS-Mobile-Glass.png">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                <form>
+                    <div class="form-outline mb-4">
+                        <input class="form-control form-control-lg" id="username" type="text"/>
+                        <label class="form-label" for="username">Username</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input class="form-control form-control-lg" id="password" type="password"/>
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                        <div class="form-check">
+                            <input checked class="form-check-input" id="form1Example3" type="checkbox" value=""/>
+                            <label class="form-check-label" for="form1Example3"> Remember me </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg  btn-block col-12" id="submit_btn" type="button">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="position-fixed bottom-1 end-1 z-index-2">
+    <div class="toast fade hide p-2 bg-white" role="alert" aria-live="assertive" id="successToast" aria-atomic="true">
+        <div class="toast-header border-0">
+            <i class="material-icons text-success me-2">
+                verified
+            </i>
+            <span class="me-auto font-weight-bold">Success </span>
+            <small class="text-body">just now</small>
+            <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>
+        </div>
+        <hr class="horizontal dark m-0">
+        <div class="toast-body" id="toast_success_body">
+
+        </div>
+    </div>
+    <div class="toast fade hide p-2 mt-2 bg-white" role="alert" aria-live="assertive" id="dangerToast" aria-atomic="true">
+        <div class="toast-header border-0">
+            <i class="material-icons text-danger me-2">
+                report_problem
+            </i>
+            <span class="me-auto text-gradient text-danger font-weight-bold">Warning</span>
+            <small class="text-body">just now</small>
+            <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>
+        </div>
+        <hr class="horizontal dark m-0">
+        <div class="toast-body" id="toast_warning_body">
+        </div>
+    </div>
+</div>
+</body>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/42d5adcbca.js"></script>
+<script src="js/core/popper.min.js"></script>
+<script src="js/core/bootstrap.min.js"></script>
+<script src="js/plugins/perfect-scrollbar.min.js"></script>
+<script src="js/plugins/smooth-scrollbar.min.js"></script>
+<script src="js/dashboard.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="js/material-dashboard.js?v=3.0.4"></script>
+</html>
